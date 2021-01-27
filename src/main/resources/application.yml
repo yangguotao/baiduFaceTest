@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: baiduFace
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloud?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useAffectedRows=true&usersSSL=true
+    username: root
+    password: 123456
+
+info:
+  app.name: http://localhost:8081/gerUserList
+  build.artifactId: $project.artifactId$
+  bulid.version: $project.version$
